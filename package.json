@@ -55,7 +55,7 @@
   "scripts": {
     "start": "nodemon --watch webpack.config.ts --exec \"./node_modules/.bin/wp --config webpack.config.ts --mode development\"",
     "build": "wp --config webpack.config.ts --mode production",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx"
   },
   "browserslist": {
     "production": [
