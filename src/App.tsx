@@ -5,7 +5,7 @@ export interface AppProps {
 }
 
 const App: React.FunctionComponent = () => {
-  return <div className="App"></div>
+  return <div className="App">Hello</div>
 }
 
 export default App
