@@ -5,7 +5,7 @@ import autoprefixerPlugin from 'autoprefixer'
 import postCssNestedPlugin from 'postcss-nested'
 import { appDirectory } from './utils/utils'
 
-const config = {
+export default {
   plugins: [
     postCssMixinsPlugin({
       silent: true,
@@ -17,5 +17,3 @@ const config = {
     autoprefixerPlugin,
   ],
 }
-
-export default config

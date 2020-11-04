@@ -62,7 +62,7 @@
     "react-dom": "^17.0.1"
   },
   "scripts": {
-    "start": "nodemon --watch webpack.config.ts --exec \"./node_modules/.bin/wp --config webpack.config.ts --mode development\"",
+    "start": "nodemon --watch webpack.config.ts --exec \"wp --config webpack.config.ts --mode development\"",
     "build": "wp --config webpack.config.ts --mode production",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
     "test": "jest"
@@ -71,14 +71,17 @@
     "production": [
       "defaults",
       "not IE 11",
-      "not IE_Mob 11"
+      "not IE_Mob 11",
+      "not dead",
+      "not op_mini all"
     ],
     "development": [
       "last 1 version"
     ],
     "modern": [
       "last 1 chrome version",
-      "last 1 firefox version"
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
