@@ -1,9 +1,9 @@
-// import autoprefixerPlugin from 'autoprefixer'
+import autoprefixerPlugin from 'autoprefixer'
 // import postCssMixinsPlugin from 'postcss-mixins'
 // import postCssSimpleVarsPlugin from 'postcss-simple-vars'
-// import postCssModulesExtendRulePrePlugin from 'postcss-modules-extend-rule/pre'
 // import postCssNestedPlugin from 'postcss-nested'
 // import { appDirectory } from './utils/utils'
+// import postCssModulesExtendRulePrePlugin from 'postcss-modules-extend-rule/pre'
 
 // eslint-disable-next-line no-undef
 module.exports = {
@@ -15,6 +15,6 @@ module.exports = {
     // postCssSimpleVarsPlugin,
     // postCssNestedPlugin,
     // postCssModulesExtendRulePrePlugin,
-    // autoprefixerPlugin,
+    autoprefixerPlugin,
   ],
 }

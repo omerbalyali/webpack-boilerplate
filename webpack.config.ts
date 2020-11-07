@@ -40,6 +40,7 @@ const webpackConfig: webpack.Configuration = {
     ],
   },
   resolve: {
+    modules: ['src', 'node_modules'],
     extensions: CONFIG_OPTIONS.compilation.resolve.extensions,
   },
   plugins: [
