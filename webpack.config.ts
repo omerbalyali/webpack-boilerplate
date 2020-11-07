@@ -44,12 +44,14 @@ const webpackConfig: webpack.Configuration = {
   },
   plugins: [
     COMMON_PARTS.cleanWebpackPlugin,
+    // Currently not compatible with webpack5
+    // COMMON_PARTS.postCSSAssetsPlugin,
     COMMON_PARTS.htmlWebpackPlugin,
-    COMMON_PARTS.postCSSAssetsPlugin,
     COMMON_PARTS.extractCSSPlugin,
+    // Currently not compatible with webpack5
+    // COMMON_PARTS.manifestPlugin,
     COMMON_PARTS.tsCheckerWebpackPlugin,
     COMMON_PARTS.esLintWebpackPlugin,
-    COMMON_PARTS.manifestPlugin,
     COMMON_PARTS.webpackPluginServe,
   ].filter(Boolean),
 }

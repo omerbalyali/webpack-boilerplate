@@ -54,12 +54,6 @@ const extractCSS: webpack.RuleSetRule = {
         devMode && !simulateProduction
           ? 'style-loader'
           : MiniCSSExtractPlugin.loader,
-      options:
-        devMode && !simulateProduction
-          ? {}
-          : {
-              hmr: true,
-            },
     },
     {
       loader: 'css-loader',
