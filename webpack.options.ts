@@ -69,11 +69,11 @@ const webpackOptions = {
     devServer: {
       host: 'localhost',
       port: 3000,
-      open: false,
+      open: true,
       overlay: true,
     },
     sourceMaps: {
-      devtool: 'inline-source-map',
+      devtool: 'eval-source-map',
       cssSourceMaps: true,
       jsSourceMaps: true,
     },

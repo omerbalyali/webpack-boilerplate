@@ -13,6 +13,7 @@ const webpackConfig: webpack.Configuration = {
     poll: 1000,
     ignored: ['node_modules/**'],
   },
+  stats: 'verbose',
   devtool: CONFIG_OPTIONS.development.sourceMaps.devtool,
   entry: {
     main: indexFile(
@@ -56,5 +57,4 @@ const webpackConfig: webpack.Configuration = {
     COMMON_PARTS.webpackPluginServe,
   ].filter(Boolean),
 }
-console.log(webpackConfig.mode)
 export default webpackConfig

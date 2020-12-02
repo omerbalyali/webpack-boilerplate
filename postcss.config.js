@@ -2,6 +2,7 @@ import autoprefixerPlugin from 'autoprefixer'
 // import postCssMixinsPlugin from 'postcss-mixins'
 // import postCssSimpleVarsPlugin from 'postcss-simple-vars'
 // import postCssNestedPlugin from 'postcss-nested'
+import postCssExtendRulePlugin from 'postcss-extend-rule'
 // import { appDirectory } from './utils/utils'
 // import postCssModulesExtendRulePrePlugin from 'postcss-modules-extend-rule/pre'
 
@@ -15,6 +16,7 @@ module.exports = {
     // postCssSimpleVarsPlugin,
     // postCssNestedPlugin,
     // postCssModulesExtendRulePrePlugin,
+    postCssExtendRulePlugin,
     autoprefixerPlugin,
   ],
 }
