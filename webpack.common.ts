@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCSSExtractPlugin from 'mini-css-extract-plugin'
 import { WebpackPluginServe } from 'webpack-plugin-serve'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
-import ManifestPlugin from 'webpack-manifest-plugin'
+import { WebpackManifestPlugin } from 'webpack-manifest-plugin'
 import ESLintPlugin from 'eslint-webpack-plugin'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import PostCSSAssetsPlugin from 'postcss-assets-webpack-plugin'
@@ -138,7 +138,7 @@ const manifestPlugin =
     ? () => {
         return null
       }
-    : new ManifestPlugin()
+    : new WebpackManifestPlugin()
 const cleanWebpackPlugin = new CleanWebpackPlugin({
   cleanOnceBeforeBuildPatterns: ['**/*'],
   cleanAfterEveryBuildPatterns: [
