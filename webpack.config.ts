@@ -50,8 +50,7 @@ const webpackConfig: webpack.Configuration = {
     // COMMON_PARTS.postCSSAssetsPlugin,
     COMMON_PARTS.htmlWebpackPlugin,
     COMMON_PARTS.extractCSSPlugin,
-    // Currently not compatible with webpack5
-    // COMMON_PARTS.manifestPlugin,
+    COMMON_PARTS.manifestPlugin,
     COMMON_PARTS.tsCheckerWebpackPlugin,
     COMMON_PARTS.esLintWebpackPlugin,
     COMMON_PARTS.webpackPluginServe,
